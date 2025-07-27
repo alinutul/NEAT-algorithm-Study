@@ -16,14 +16,20 @@ pygame.display.set_caption("NEAT-Flappy Bird")
 clock = pygame.time.Clock()
 
 
-bg_raw = pygame.image.load("Assets/background-day.png").convert()
+BASE_DIR = os.path.dirname(__file__)
+
+# Load and scale background
+bg_raw = pygame.image.load(os.path.join(BASE_DIR, "Assets", "background-day.png")).convert()
 bg = pygame.transform.scale(bg_raw, (SCREEN_WIDTH, SCREEN_HEIGHT))
-floor_raw = pygame.image.load("Assets/base.png").convert()
-floor = pygame.transform.scale(floor_raw,(SCREEN_WIDTH, 100))
+
+# Load and scale floor
+floor_raw = pygame.image.load(os.path.join(BASE_DIR, "Assets", "base.png")).convert()
+floor = pygame.transform.scale(floor_raw, (SCREEN_WIDTH, 100))
 floor_x = 0
 
-pipe_raw = pygame.image.load("Assets/pipe-green.png").convert()
-pipe_s = pygame.transform.scale(pipe_raw,(100,600))
+# Load and scale pipe
+pipe_raw = pygame.image.load(os.path.join(BASE_DIR, "Assets", "pipe-green.png")).convert()
+pipe_s = pygame.transform.scale(pipe_raw, (100, 600))
 
 gravity = 0.25
 
@@ -44,7 +50,10 @@ def background():
 
 class Bird:
     def __init__(self,x,y):
-        self.surface = pygame.transform.scale(pygame.image.load("Assets/bird.png").convert_alpha(), (75, 55))
+        self.surface = pygame.transform.scale(
+            pygame.image.load(os.path.join(BASE_DIR, "Assets", "bird.png")).convert_alpha(),
+            (75, 55)
+        )
         self.rect = self.surface.get_rect(center=(x, y))
         self.vel = 0
         self.score = 0
