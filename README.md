@@ -18,6 +18,7 @@ The maximum number of generations is reached.
 "Not the best version of the game—but the goal was AI, not polish!"
 
 <img width="545" height="981" alt="Flappy Bird" src="https://github.com/user-attachments/assets/fd7469d3-b805-4e7a-81c5-b788498549b2" />
+<br>
 In this version, NEAT is used to teach the bird how to fly between pipes without crashing. Over generations, birds learn to jump with better timing.
 <br>
 🦖 T-Rex Runner AI
