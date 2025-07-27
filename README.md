@@ -9,6 +9,7 @@ For the actual games I used Youtube tutorials. I included the NEAT algorithm by 
 
 Flappy bird(not the best game version but the game isn't the purpose)
 <img width="545" height="981" alt="p1" src="https://github.com/user-attachments/assets/fd7469d3-b805-4e7a-81c5-b788498549b2" />
+<br>
 Trex run
 This is the tutorial that ispired me to do this: https://www.youtube.com/watch?v=GKmD26lH51U&list=PL30AETbxgR-d03tf_HIr8-OA1gmClI3mE (Max Rohowsky)
 <img width="1068" height="561" alt="p1" src="https://github.com/user-attachments/assets/0987a01a-5add-4f8c-8d10-e2df2166c6b0" />
